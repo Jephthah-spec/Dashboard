@@ -131,7 +131,9 @@ body {
 
 .nav-item {
 	display: flex;
+	height: fit-content;
 	align-items: center;
+	justify-content: left;
 	gap: 25px;
 	padding: 10px 12px;
 	color: #374151;
@@ -151,6 +153,16 @@ body {
 	background: #1b1b1b;
 	color: #ffffff;
 	font-weight: 500;
+}
+.notification-dot{
+	width: 6px;
+	height: 6px;
+	background-color: red;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+	right: 10px;
+	align-self: center;
 }
 /* HEADER STYLES */
 
@@ -197,14 +209,16 @@ body {
 .avatar {
 	width: 2rem;
 	height: 2rem;
-	background-color: #7c3aed;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: white;
-	font-size: 0.875rem;
-	font-weight: 500;
+
+	img{
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+	}
 }
 .greet-rectangle{
     width: 90%;
