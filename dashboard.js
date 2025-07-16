@@ -66,3 +66,13 @@ checkBoxes.forEach (box =>{
 	checked.innerText = checkedCount;
 })
 });
+const searchBtn = document.getElementById('searchBtn');
+const search = document.getElementById("search");
+
+searchBtn.addEventListener('click', function showSearch() {
+	if (search.classList.contains('hide')) {
+		search.classList.remove('hide');
+		searchBtn.style.display = "none"
+	}
+});
+
